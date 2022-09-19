@@ -3,49 +3,106 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <title>Runner Idle</title>
+    <!-- Primary Meta Tags -->
     <title>奔跑者放置 - Runner Idle</title>
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+    <meta name="title" content="RunnerIdle - An Idle/Incremental Game" />
+    <meta
+      name="description"
+      content="An activity-queue-style idle incremental game, in the vein of Idle Loops, Immortality Idle, or Groundhog Life."
+    />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://carlank.github.io/runnerIdle/" />
+    <meta property="og:title" content="RunnerIdle - An Idle/Incremental Game" />
+    <meta
+      property="og:description"
+      content="An activity-queue-style idle incremental game, in the vein of Idle Loops, Immortality Idle, or Groundhog Life."
+    />
+    <meta
+      property="og:image"
+      content="https://carlank.github.io/runnerIdle/image/screenshot.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://carlank.github.io/runnerIdle/"
+    />
+    <meta
+      property="twitter:title"
+      content="RunnerIdle - An Idle/Incremental Game"
+    />
+    <meta
+      property="twitter:description"
+      content="An activity-queue-style idle incremental game, in the vein of Idle Loops, Immortality Idle, or Groundhog Life."
+    />
+    <meta
+      property="twitter:image"
+      content="https://carlank.github.io/runnerIdle/image/screenshot.png"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+    <script src="plotly-2.13.3.min.js"></script>
     <script type="module" src="./build/game.js"></script>
     <style>
       * {
         user-select: none;
       }
       body {
-        background-color: #66ccff;
         height: 100vh;
         margin: 0px;
       }
       #perception-click-target {
         position: fixed;
         font-weight: bold;
-        color: #fff8;
+        color: #fff;
+        z-index: 500;
+        mix-blend-mode: difference;
+      }
+      #perception-click-target.big {
+        font-size: 2em;
+        color: #fff;
+      }
+      runner-idle {
+        z-index: 0;
       }
     </style>
   </head>
   <body>
+    <script src="chs.js"></script>
+    <script src="core.js"></script>
     <div id="perception-click-target" hidden>click me</div>
     <runner-idle></runner-idle>
     <ri-tutorial></ri-tutorial>
     <ri-settings></ri-settings>
-    <script src="chs.js"></script>
-    <script src="//g8hh.com/zh/core.js"></script>
+    <script async src="101375836.js"></script>
+    <noscript
+      ><p>
+        <img
+          alt="Clicky"
+          width="1"
+          height="1"
+          src="//in.getclicky.com/101375836ns.gif"
+        /></p
+    ></noscript>
 <!--客服 开始-->
-<script src="//g8hh.com/static/js/jquery.min.js"></script>
-<link rel="stylesheet" href="//g8hh.com/static/css/kf.css" type="text/css" media="screen" charset="utf-8">
-<script src="//g8hh.com/static/js/kf.js"></script>
+<script src="//g8hh.github.io/static/js/jquery.min.js"></script>
+<link rel="stylesheet" href="//g8hh.github.io/static/css/kf.css" type="text/css" media="screen" charset="utf-8">
+<script src="//g8hh.github.io/static/js/kf.js"></script>
 <!-- 客服 结束 -->
 <!--站长统计-->
-<div style="display: none">
-  <script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?6581389daf4dd6fe7dbb4d20fdcb52a6";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-  </script>
-      </div>
+    <div style="display: none">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6581389daf4dd6fe7dbb4d20fdcb52a6";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    </div>
   </body>
 </html>
